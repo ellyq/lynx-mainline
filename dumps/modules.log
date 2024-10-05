@@ -1,0 +1,31 @@
+kona:/ # lsmod
+Module                  Size  Used by
+wlan                 8593408  0 
+machine_dlkm          155648  0 
+wcd938x_slave_dlkm     16384  0 
+wcd938x_dlkm          102400  2 machine_dlkm
+wcd9xxx_dlkm           40960  21 wcd938x_dlkm
+mbhc_dlkm              45056  1 wcd938x_dlkm
+tx_macro_dlkm         106496  0 
+rx_macro_dlkm          94208  0 
+va_macro_dlkm          98304  0 
+wsa_macro_dlkm         65536  1 machine_dlkm
+swr_ctrl_dlkm          49152  4 tx_macro_dlkm,rx_macro_dlkm,va_macro_dlkm,wsa_macro_dlkm
+bolero_cdc_dlkm        57344  6 machine_dlkm,tx_macro_dlkm,rx_macro_dlkm,va_macro_dlkm,wsa_macro_dlkm
+wsa881x_dlkm           45056  3 machine_dlkm
+wcd_core_dlkm          28672  7 machine_dlkm,wcd938x_dlkm,tx_macro_dlkm,rx_macro_dlkm,va_macro_dlkm,wsa_macro_dlkm,wsa881x_dlkm
+stub_dlkm              16384  1 
+hdmi_dlkm              20480  1 
+swr_dlkm               24576  4 wcd938x_slave_dlkm,wcd938x_dlkm,swr_ctrl_dlkm,wsa881x_dlkm
+pinctrl_lpi_dlkm       20480  8 
+pinctrl_wcd_dlkm       16384  0 
+usf_dlkm               45056  0 
+native_dlkm           139264  0 
+platform_dlkm        2146304  68 native_dlkm
+q6_dlkm               868352  11 machine_dlkm,wcd9xxx_dlkm,va_macro_dlkm,swr_ctrl_dlkm,bolero_cdc_dlkm,pinctrl_lpi_dlkm,usf_dlkm,native_dlkm,platform_dlkm
+adsp_loader_dlkm       16384  0 
+apr_dlkm              229376  4 usf_dlkm,platform_dlkm,q6_dlkm,adsp_loader_dlkm
+snd_event_dlkm         16384  5 machine_dlkm,bolero_cdc_dlkm,pinctrl_lpi_dlkm,q6_dlkm,apr_dlkm
+q6_notifier_dlkm       16384  3 pinctrl_lpi_dlkm,q6_dlkm,apr_dlkm
+q6_pdr_dlkm            16384  1 q6_notifier_dlkm
+msm_11ad_proxy         28672  0 

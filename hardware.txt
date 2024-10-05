@@ -1,0 +1,43 @@
+i2c:
+kona:/ # i2cdetect -a 0
+Probe chips 0x00-0x7f on bus 0? (Y/n):y
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- UU -- -- -- -- -- -- -- -- -- -- --
+kona:/ # i2cdetect -a 1
+Probe chips 0x00-0x7f on bus 1? (Y/n):y
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+10: UU 11 -- -- -- -- -- -- UU 19 -- -- -- -- -- --
+20: -- -- -- -- -- UU -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- UU -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- UU -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+kona:/ # i2cdetect -a 2
+Probe chips 0x00-0x7f on bus 2? (Y/n):y
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:%  <scan crashed the kernel, watchdog rebooted the device>
+
+Cameras:
+- OV9282 (IR?)
+- OV4689 (Passtrough? 2720x1536)
+
+PCI-E:
+- Atheros QCA6174
+
+Displays:
+- Unknown, pair of LT9611UXC bridges used
+
+Sensors:
+- ICM4X6XX Accelerometer
+- Bosch BMM150 Magnetometer
+- ICM4X6XX Gyroscope
+- STK3X3X Proximity

@@ -34,7 +34,8 @@ PCI-E:
 - Atheros QCA6174
 
 Displays:
-- Unknown, pair of LT9611UXC bridges used
+- Bootargs mention LT9611UXC bridge, maybe a leftover from development process?
+- XBL/DT agree on JDI/BOE R63455, i.e: BOE VS021XRM-NW0
 
 Sensors:
 - ICM4X6XX Accelerometer

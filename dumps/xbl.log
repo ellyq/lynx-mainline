@@ -1,0 +1,681 @@
+Format: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.XF.3.2-00366-SM8250-1
+S - IMAGE_VARIANT_STRING=Soc8250LAA
+S - OEM_IMAGE_VERSION_STRING=vBuild1GXV7
+S - Boot Interface: UFS
+S - Secure Boot: Off
+S - Boot Config @ 0x00786070 = 0x00000001
+S - JTAG ID @ 0x00786130 = 0x200ce0e1
+S - OEM ID @ 0x00786138 = 0x00000000
+S - Serial Number @ 0x00786134 = 0xb9fc008c
+S - OEM Config Row 0 @ 0x007841e0 = 0x0000000000000000
+S - OEM Config Row 1 @ 0x007841e8 = 0x0000000000000000
+S - Feature Config Row 0 @ 0x007841f8 = 0x0040200000000400
+S - Feature Config Row 1 @ 0x00784200 = 0xc000000000000000
+S - Core 0 Frequency, 1516 MHz
+S - PBL Patch Ver: 5
+S - PBL freq: 600 MHZ
+D -      6209 - pbl_apps_init_timestamp
+D -    164460 - bootable_media_detect_timestamp
+D -      1054 - bl_elf_metadata_loading_timestamp
+D -       716 - bl_hash_seg_auth_timestamp
+D -      6613 - bl_elf_loadable_segment_loading_timestamp
+D -      5528 - bl_elf_segs_hash_verify_timestamp
+D -      7020 - bl_sec_hash_seg_auth_timestamp
+D -       820 - bl_sec_segs_hash_verify_timestamp
+D -        33 - pbl_populate_shared_data_and_exit_timestamp
+S -    192453 - PBL, End
+B -    206180 - SBL1, Start
+B -    207766 - SBL1 BUILD @ 21:12:41 on Feb 29 2024
+B -    209321 - usb: usb_shared_hs_phy_init: hs phy cfg size , 0xc
+D -      1647 - sbl1_hw_init
+D -         0 - boot_flash_init
+B -    407480 - UFS INQUIRY ID: WDC     SDINFDK4-128G   1270
+B -    410377 - UFS Boot LUN: 1
+D -       884 - Auth Metadata
+D -    226828 - sbl1_xblconfig_init
+D -        31 - boot_config_data_table_default_init
+B -    436333 - Using default CDT
+D -        61 - boot_config_data_table_init
+B -    436363 - CDT Version:3,Platform ID:8,Major ID:1,Minor ID:0,Subtype:1
+D -      7625 - sbl1_hw_platform_pre_ddr
+D -         0 - devcfg init
+B -    451949 - PM: PM 0=0x8000028000000080:0x0 
+B -    452010 - PM: PM 1=0x8000018000000040:0x0 
+B -    452071 - PM: PM 2=0x8000018000000020:0x0 
+B -    452132 - PM: PM 5=0x8000018000000040:0x0 
+B -    452193 - PM: POWER ON by KPDPWR, POWER OFF by PS_HOLD
+B -    455151 - PM: PMA_2 PON:KPD ON:PON OFF:DVDD
+B -    455151 - PM: PMA_3 PON:DC WR:KPD ON:PON POFF:KPD OFF:DVDD FAULT1:UVLO FAULT2:WD S3:WD
+B -    555039 - PM: SET_VAL:Skip
+B -    555588 - PM: PSI: b0x00_v0x53
+B -    559126 - PM: Device Init # SPMI Transn: 5314
+B -    568520 - PM: Driver Init # SPMI Transn: 560
+B -    581482 - PM: battery Id: 100572
+B -    581696 - PM: APSD result: 255
+B -    581696 - PM: APSD in progress
+B -    581818 - PM: Vbatt: 3869; Ibatt: 255
+B -    582001 - PM: CHG Init # SPMI Transn: 51
+D -    138013 - pmic XBL init
+D -     27541 - vsense_railway_cpr init
+D -    165554 - sbl1_hw_pre_ddr_init
+D -        31 - boot_dload_handle_forced_dload_timeout
+D -      1738 - sbl1_load_ddr_training_data
+D -      1860 - sbl1_ddr_set_params
+B -    628513 - eCDT MRR - Data Starting Address: 0x09066D00
+B -    630709 - DSF version = 156.8.18
+B -    630709 - Manufacturer ID = 6, Device Type = 8
+B -    630709 - Rank 0 size = 4096 MB, Rank 1 size = 4096 MB
+D -     19581 - sbl1_ddr_init
+D -         0 - boot_pre_ddi_entry
+B -    631014 - do_ddr_training, Start
+B -    658220 - DDR: Start of DDR Training Restore
+B -    667645 - Frequency = 1805 MHz
+B -    667645 - DDR: End of DDR Training Restore
+D -     36722 - do_ddr_training, Delta
+D -     36844 - sbl1_do_ddr_training
+D -         0 - sbl1_hand_control_to_devprog_ddr
+D -       976 - boot_ddi_entry
+B -    668834 - Pimem init cmd, entry
+D -     10736 - Pimem init cmd, exit
+D -     11041 - sbl1_post_ddr_init
+D -        31 - sbl1_hw_init_secondary
+B -    680211 - APDP Image Load, Start
+D -       824 - Auth Metadata
+D -       457 - Segments hash check
+D -      2531 - APDP Image Loaded, Delta - (8204 Bytes)
+D -         0 - boot_dload_dump_security_regions
+B -    684237 - usb: UFS Serial - 55b7d44c
+B -    684267 - usb: fedl, vbus_low
+D -      1525 - boot_dload_check
+D -         0 - boot_cache_set_memory_barrier
+D -         0 - boot_smem_debug_init
+D -       366 - boot_smem_init
+D -         0 - boot_smem_alloc_for_minidump
+B -    684786 - PM: SMEM Chgr Info Write Success
+D -        92 - boot_smem_store_pon_status
+D -        30 - sbl1_hw_platform_smem
+D -        61 - boot_ddr_share_data_to_aop
+D -       518 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -        31 - boot_share_flash_data
+D -         0 - boot_populate_ram_partition_table
+D -        61 - boot_populate_ddr_details_shared_table
+D -         0 - sbl1_tlmm_init
+D -         0 - sbl1_efs_handle_cookies
+D -        30 - boot_apt_test
+B -    685884 - OEM_MISC Image Load, Start
+D -       732 - Auth Metadata
+D -       274 - Segments hash check
+D -      2440 - OEM_MISC Image Loaded, Delta - (8080 Bytes)
+B -    688446 - QTI_MISC Image Load, Start
+D -         0 - QTI_MISC Image Loaded, Delta - (0 Bytes)
+B -    696101 - PM: PM Total Mem Allocated: 2940 
+D -      7655 - sbl1_pm_aop_pre_init_wrapper
+B -    696132 - AOP Image Load, Start
+D -       976 - Auth Metadata
+D -      1952 - Segments hash check
+D -      8998 - AOP Image Loaded, Delta - (198304 Bytes)
+B -    705099 - QSEE Dev Config Image Load, Start
+D -       915 - Auth Metadata
+D -       580 - Segments hash check
+D -      3599 - QSEE Dev Config Image Loaded, Delta - (45248 Bytes)
+B -    708698 - QSEE Image Load, Start
+D -      4361 - Auth Metadata
+D -     20313 - Segments hash check
+D -     94611 - QSEE Image Loaded, Delta - (3146373 Bytes)
+D -       183 - sbl1_hw_play_vibr
+B -    803705 - SEC Image Load, Start
+D -         0 - SEC Image Loaded, Delta - (0 Bytes)
+B -    803705 - CPUCPFW Image Load, Start
+D -         0 - CPUCPFW Image Loaded, Delta - (0 Bytes)
+B -    803736 - QHEE Image Load, Start
+D -       793 - Auth Metadata
+D -      2989 - Segments hash check
+D -      6649 - QHEE Image Loaded, Delta - (444216 Bytes)
+B -    810415 - OEM_HYP Image Load, Start
+D -         0 - OEM_HYP Image Loaded, Delta - (0 Bytes)
+B -    810415 - STI Image Load, Start
+D -         0 - STI Image Loaded, Delta - (0 Bytes)
+B -    810964 - APPSBL Image Load, Start
+D -       823 - Auth Metadata
+D -     13024 - Segments hash check
+D -     31751 - APPSBL Image Loaded, Delta - (2514944 Bytes)
+D -         0 - sbl1_appsbl_arch_determination
+B -    843142 - SBL1, End
+D -    636962 - SBL1, Delta
+S - Flash Throughput, 84000 KB/s  (6441775 Bytes,  75988 us)
+S - DDR Frequency, 1555 MHz
+UEFI Start     [ 1057]
+ - 0x09FC01000 [ 1061] Sec.efi
+ASLR        : ON
+DEP         : ON (RTB)
+Timer Delta : +0 mS
+RAM Entry 0 : Base 0x080000000  Size 0x03B800000
+RAM Entry 1 : Base 0x180000000  Size 0x100000000
+RAM Entry 2 : Base 0x0C0000000  Size 0x0C0000000
+Total RAM   : 0x1FB800000
+Multithread : ON (Lib ver 1.1)
+CPU Cores   : 8 (init 1)
+CONF File   : uefiplatLA.cfg
+UEFI Ver    : 5.0.240229.BOOT.XF.3.2-00366-SM8250-1
+Build Info  : 64b Feb 29 2024 21:13:18
+Boot Device : UFS
+PROD Mode   : FALSE
+Retail      : FALSE
+ - 0x09B546000 [ 1139] DxeCore.efi
+Loading DxeCore at 0x009B546000 EntryPoint=0x009B547000
+HOBLIST address in DXE = 0x9B336018
+FV Hob            0x9FC00000 - 0x9FE65FFF
+FV Hob            0x9B580000 - 0x9BB3CFFF
+FV2 Hob           0x9B580000 - 0x9BB3CFFF
+                  631008B0-B2D1-410A-8B49-2C5C4D8ECC7E - 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792
+ - 0x09B4E5000 [ 1145] EnvDxe.efi
+ - 0x09B4DB000 [ 1145] RscRtDxe.efi
+ - 0x09B4D3000 [ 1146] SCHandlerRtDxe.efi
+ - 0x09B00A000 [ 1146] RuntimeDxe.efi
+ - 0x09B4C0000 [ 1146] ArmCpuDxe.efi
+ - 0x09B4B7000 [ 1147] ArmGicDxe.efi
+ - 0x09B4B0000 [ 1147] MetronomeDxe.efi
+ - 0x09B4A8000 [ 1148] ArmTimerDxe.efi
+ - 0x09B49E000 [ 1148] SmemDxe.efi
+ - 0x09B44D000 [ 1148] DALSys.efi
+ - 0x09B444000 [ 1149] HWIODxeDriver.efi
+ - 0x09B439000 [ 1149] ChipInfo.efi
+ - 0x09B431000 [ 1149] PlatformInfoDxeDriver.efi
+ - 0x09B426000 [ 1149] HALIOMMU.efi
+ - 0x09B412000 [ 1150] ULogDxe.efi
+ - 0x09B40A000 [ 1150] CmdDbDxe.efi
+ - 0x09B402000 [ 1150] PwrUtilsDxe.efi
+ - 0x09B3EF000 [ 1151] NpaDxe.efi
+ - 0x09B3DF000 [ 1151] RpmhDxe.efi
+ - 0x09B3D7000 [ 1152] PdcDxe.efi
+ - 0x09B3CB000 [ 1152] VcsDxe.efi
+ - 0x09B396000 [ 1153] ClockDxe.efi
+ >>> Cluster 0:     1516 MHz
+ >>> Cluster 2:     1324 MHz
+ - 0x09B38B000 [ 1162] SPMI.efi
+ - 0x09B382000 [ 1167] ShmBridgeDxe.efi
+ - 0x09B376000 [ 1168] ScmDxe.efi
+ - 0x09B36D000 [ 1169] DALTLMM.efi
+ - 0x09AFF6000 [ 1169] ResetRuntimeDxe.efi
+ - 0x09B33D000 [ 1170] PmicDxe.efi
+PM0: 30, PM1: 32, PM2: 31, PM3: 33, PM5: 36, 
+ - 0x09AFEB000 [ 1200] DiskIoDxe.efi
+ - 0x09AFDF000 [ 1200] PartitionDxe.efi
+ - 0x09B002000 [ 1200] EnglishDxe.efi
+ - 0x09AFD4000 [ 1200] FvSimpleFileSystem.efi
+ - 0x09AFB9000 [ 1201] SdccDxe.efi
+ - 0x09AF9C000 [ 1201] UFSDxe.efi
+UFS INQUIRY ID: WDC     SDINFDK4-128G   1270
+UFS Boot LUN: 1
+ - 0x09AF8C000 [ 1252] Fat.efi
+ - 0x09AF7D000 [ 1252] TzDxe.efi
+ - 0x09AF71000 [ 1256] VariableDxe.efi
+AppReg Init:12 mS
+Embedded Images Supported and Commonlibs loaded
+ - 0x09AD69000 [ 1333] FeatureEnablerDxe.efi
+ - 0x09AD61000 [ 1368] QcomWDogDxe.efi
+HW Wdog Setting from PCD : Disabled
+ - 0x09AD57000 [ 1369] DDRInfoDxe.efi
+ - 0x09AD13000 [ 1370] DisplayDxe.efi
+DisplayDxe: Initialize ABL!
+PanelInitSeq: Panel_CheckOverride: false
+PanelInitSeq: Select JDI since GPIO_141 is 0
+PanelInitSeq: Panel_Default_PowerUp
+PanelInitSeq: GPIO_133 LOW
+PanelInitSeq: GPIO_133 HIGH
+DisplayDxe: MDP_PMIC_MODULE_CONTROLTYPE_IBB_LAB_LCD
+PanelInitSeq: MDPPlatformConfigure: MDPPLATFORM_CONFIG_POWERUP: Setup VSP & VSN to 5.7V
+PanelInitSeq: Panel_Default_Peripheral_Power: LCDB, IBB=5700, LAB=-5700
+PanelInitSeq: GPIO_134 HIGH
+PanelInitSeq: GPIO_140 HIGH
+PanelInitSeq: GPIO_144 HIGH
+PanelInitSeq: Enter MDPPLATFORM_CONFIG_GETPANELCONFIG
+PanelInitSeq: Get the panel id 5 xml configurations
+DisplayDxe: Panel ID:0x00000000 [LCD] 
+DisplayDxe: Resolution 3200x1600 (2 intf)
+PanelInitSeq: SetupPlatformPanelConfig PanelInitialized
+MDPLib: MDPDetect: MDPSetupDSCProperty
+Number of DSC encoders: 4
+Layer mixer split enabled: 1
+Block prediction enabled: 1
+Bits per component: 8
+Bits per pixel: 12
+Compression Ratio: 2
+DSC slice height: 40
+DSC slice width: 400
+DSC slice per packet: 2
+PanelInitSeq: Reset GPIO 75 Assert State=0
+PanelInitSeq: Panel_ResetStateExec GPIO 75 ResetAssertTime=3000us
+PanelInitSeq: Panel_ResetStateExec GPIO 75 state0=1, state1=0, state2=1
+ - 0x09AD0A000 [ 1450] PILProxyDxe.efi
+ - 0x09ACF0000 [ 1451] PILDxe.efi
+PanelInitSeq: Sending initial code
+pil-abl Done t=31ms s=2ms a=6ms f=20ms
+pil-imagefv Done t=34ms s=3ms a=5ms f=25ms
+ - 0x09ACE4000 [ 1530] SPSSDxe.efi
+SPSSDxe [spss_iar_main] I: IAR-STATE is NOT ACTIVATED [0x0], Exit now
+Overriding PIL cfg by caller
+pil-SPSS Done t=17ms s=5ms a=10ms f=0ms
+pil-SPSS Boot subsys, Done
+SPSSDxe_LogPoffReason :: Poff_reason :128
+ - 0x09AC41000 [ 1554] CPRDxe.efi
+ - 0x09AC53000 [ 1556] WatchdogTimer.efi
+ - 0x09AC2C000 [ 1556] ASN1X509Dxe.efi
+ - 0x09AC22000 [ 1557] SecRSADxe.efi
+ - 0x09AC01000 [ 1557] VerifiedBootDxe.efi
+ - 0x09AC5A000 [ 1558] EmbeddedMonotonicCounter.efi
+PanelInitSeq: UpdateDisplayParams
+ - 0x09AC19000 [ 1574] RealTimeClock.efi
+ - 0x09AC11000 [ 1575] PrintDxe.efi
+ - 0x09AB56000 [ 1575] DevicePathDxe.efi
+ - 0x09ABF9000 [ 1576] CapsuleRuntimeDxe.efi
+ - 0x09AB0D000 [ 1576] HiiDatabase.efi
+ - 0x09AB4C000 [ 1577] FontDxe.efi
+ - 0x09AA55000 [ 1582] QcomBds.efi
+ - 0x09AB3A000 [ 1584] SPI.efi
+ - 0x09AAE7000 [ 1584] I2C.efi
+ - 0x09AADD000 [ 1585] AdcDxe.efi
+ - 0x09AB6A000 [ 1585] UsbPwrCtrlDxe.efi
+ - 0x09AA12000 [ 1586] QcomChargerDxeLA.efi
+ - 0x09AB31000 [ 1596] ChargerExDxe.efi
+ - 0x09AA3B000 [ 1597] UsbfnDwc3Dxe.efi
+ - 0x09AAC6000 [ 1597] XhciPciEmulation.efi
+ - 0x09A9FB000 [ 1598] XhciDxe.efi
+ - 0x09A9E8000 [ 1598] UsbBusDxe.efi
+ - 0x09AA94000 [ 1599] UsbKbDxe.efi
+ - 0x09AAD1000 [ 1600] UsbMassStorageDxe.efi
+ - 0x09A9B5000 [ 1600] UsbConfigDxe.efi
+UsbConfigLibOpenProtocols: PMI version (0x20)
+UsbConfigInit: Dual Role Enabled on Port Number: 0
+UsbConfigInit: UsbConfigInit, not start on port: 0, mode 0
+UsbConfigInit: Dual Role Enabled on Port Number: 1
+UsbConfigInit: UsbConfigInit, not start on port: 1, mode 0
+UsbConfigInit: UsbPwrCtrl No. of Ports = 2
+ - 0x09A9DE000 [ 1604] ButtonsDxe.efi
+ - 0x09AAA7000 [ 1606] TsensDxe.efi
+ - 0x09A992000 [ 1608] LimitsDxe.efi
+APC1 IDDQ WC 0 , L2:0, CPU[0]:175, CPU[1]:175, CPU[2]:175, CPU[3]:175
+ APC1 Total 700
+LoadSys  TIME 0ms
+tsens  TIME 1ms
+scm  TIME 2ms
+Load CPU 0 Slp: 0x69, Int: 0xFFFFFF96
+Load CPU 1 Slp: 0xE0, Int: 0xFFFFFF65
+Load CPU 2 Slp: 0x6A, Int: 0x142
+Load CPU 3 Slp: 0x107, Int: 0xFFFFFFB1
+Load GPU 0 Slp: 0x97, Int: 0xFFFFFFF6 adc_min:0x166 adc_max:0x168
+Load NPU 0 Slp: 0x2C, Int: 0x13
+LmhIsenseInit Pre CPU  TIME 0ms
+GLD IDDQ WC 0
+LmhIsenseSubSysEntry Post SubSysEntryCb  TIME 0ms
+LmhIsenseSubSysEntry Post LmhIsenseSubSysInit  TIME 0ms
+LmhIsenseInitSubSys Post SubSysEntry  TIME 0ms
+LmhIsenseInitSubSys Post SubSysTrim  TIME 0ms
+LmhIsenseInitSubSys Post SubSysExit  TIME 0ms
+LmhIsenseInit Post CPU  TIME 0ms
+GPU IDDQ 40
+LmhIsenseSubSysEntry Post SubSysEntryCb  TIME 0ms
+LmhIsenseSubSysEntry Post LmhIsenseSubSysInit  TIME 0ms
+LmhIsenseInitSubSys Post SubSysEntry  TIME 0ms
+LmhIsenseInitSubSys Post SubSysTrim  TIME 0ms
+LmhIsenseInitSubSys Post SubSysExit  TIME 0ms
+LmhIsenseInit Post GPU  TIME 1ms
+Entering in func1 of NPU  TIME 1ms
+NPU IDDQ 46
+LmhIsenseSubSysEntry Post SubSysEntryCb  TIME 0ms
+LmhIsenseSubSysEntry Post LmhIsenseSubSysInit  TIME 0ms
+LmhIsenseInitSubSys Post SubSysEntry  TIME 0ms
+LmhIsenseInitSubSys Post SubSysTrim  TIME 0ms
+LmhIsenseInitSubSys Post SubSysExit  TIME 0ms
+LmhIsenseInit Post NPU  TIME 2ms
+isense  TIME 5ms
+ISENSE TOTAL TIME 5ms
+ - 0x09A3B8000 [ 1621] GpiDxe.efi
+ - 0x09A385000 [ 1658] HashDxe.efi
+ - 0x09A36D000 [ 1659] CipherDxe.efi
+ - 0x09A355000 [ 1660] MacDxe.efi
+ - 0x09A9AD000 [ 1661] RngDxe.efi
+ - 0x09A9A5000 [ 1661] SimpleTextInOutSerial.efi
+ - 0x09A3DB000 [ 1662] ConPlatformDxe.efi
+ - 0x09A3AA000 [ 1663] ConSplitterDxe.efi
+ - 0x09A3CF000 [ 1664] GraphicsConsoleDxe.efi
+ - 0x09A33A000 [ 1664] SecurityStubDxe.efi
+ - 0x09A347000 [ 1665] UsbMsdDxe.efi
+ - 0x09A31F000 [ 1666] UsbDeviceDxe.efi
+ - 0x09A332000 [ 1667] UsbInitDxe.efi
+BDS Entry      [ 1667] 
+Disp init wait [ 1667] 
+-----------------------------
+Platform Init  [ 1800] BDS
+Boot Cycle : 6
+Run  Cycle : 6
+UEFI Ver   : 5.0.240229.BOOT.XF.3.2-00366-SM8250-1
+Platform           : MTP
+Chip Name          : SM8250
+Chip Ver           : 2.1
+Chip Serial Number : 0xB9FC008C
+Silver cluster Core 0 Freq: 1516 MHz
+-----------------------------
+ - 0x0998BE000 [ 1827] QcomChargerApp.efi
+Loading Battery Profile for Fuel Gauge Start  : 1867881
+2, PmicDxe:: PmicFgSram_LoadBattProfile StateOfCharge,Voltage,ChargerCurrent,Temp 
+2, PmicDxe:: PmicFgSram_LoadBattProfile Battery Status 58,3903,2,17 
+Loading Battery Profile for Fuel Gauge End  : 2550809
+Successfully synced all UEFI tables
+UEFI Total : 1559 ms
+POST Time      [ 2616] OS Loader
+ - 0x098DA0000 [ 2621] LinuxLoader.efi
+Loader Build Info: Feb 29 2024 16:51:01
+LinuxLoader Load Address to debug ABL: 0x98DA1000
+LinuxLoaderEntry Address: 0x98DA13D8
+SetThreadStackEnv () kernel version = 0x10005 
+AllocateUnSafeStackPtr CurrentThread = 0x9BC0A598 with linktable 
+BootStats: ID-0: BootStatClockCount:86010
+VB: Non-secure device: Security State: (0xF7F)
+VB: RWDeviceState: Succeed using devinfo!
+Selected Lun : 0, handle: 0 does not have partition record, ignore
+Selected Lun : 1, handle: 0 does not have partition record, ignore
+Selected Lun : 2, handle: 0 does not have partition record, ignore
+Selected Lun : 3, handle: 0 does not have partition record, ignore
+Selected Lun : 4, handle: 0 does not have partition record, ignore
+Selected Lun : 5, handle: 0 does not have partition record, ignore
+Multi Slot boot is supported
+GetActiveSlot: found active slot _a, priority 3
+Key Stroke Read
+ScanCode = (0x102), UnicodeChar =(0x0)
+ShiftState=(0x0), ToggleState==(0x0)
+Platform Info : 0x8
+Total DDR Size: 0x00000001FB800000 
+GPIO_125 = 1
+GPIO_6 = 1
+GPIO_7 = 0
+Phase ID:0x6
+GPIO_28 = 0
+GPIO_29 = 1
+GPIO_30 = 0
+Project ID:0x2
+Raw Chip Id   : 0x164
+Chip Version  : 0x20001
+Foundry Id    : 0x1
+Chip BaseBand    : apq
+Fusion Value    : 0
+HLOS SubType    : 0x0
+KeyPress:258, BootReason:0
+Fastboot=0, Recovery:0
+GetVmData: making ScmCall to get HypInfo
+GetVmData: No Vm data present! Status = (0x3)
+VM Hyp calls not present
+GetActiveSlot: found active slot _a, priority 3
+Active Slot _a is bootable
+Get BootLun =1
+Booting from slot (_a)
+Booting Into Mission Mode
+MultiSlot true, partition name boot_a
+AVB version 2
+GetActiveSlot: found active slot _a, priority 3
+Slot suffix _a Part Attr 0x77000000000000
+Slot _a is bootable
+Slot: _a, allow verification error: true
+GetActiveSlot: found active slot _a, priority 3
+GetActiveSlot: found active slot _a, priority 3
+Loading Image Start : 2640 ms
+Loading Image Done : 2640 ms
+Total Image Read size : 4096 Bytes
+Header version  2
+GetActiveSlot: found active slot _a, priority 3
+Invalid vendor_boot partition. Skipping
+avb_slot_verify.c:514: DEBUG: Loading vbmeta struct from partition 'vbmeta_a'.
+read from vbmeta_a, 0x10000 bytes at Offset 0x0, partition size 0x10000
+Load Image vbmeta_a total time: 1 ms 
+ValidateVbmetaPublicKey PublicKeyLength 1032, PublicKeyMetadataLength 0
+ValidateVbmetaPublicKey OutIsTrusted 1, UserKey 0
+ReadRollbackIndex Location 0, RollbackIndex 0
+avb_slot_verify.c:514: DEBUG: Loading vbmeta struct from partition 'vbmeta_system_a'.
+read from vbmeta_system_a, 0x10000 bytes at Offset 0x0, partition size 0x10000
+Load Image vbmeta_system_a total time: 1 ms 
+ReadRollbackIndex Location 2, RollbackIndex 0
+avb_slot_verify.c:184: DEBUG: boot_a: Loading entire partition.
+BootStats: ID-4: Kernel Load Start:87879
+BootStats: ID-4: BootStatClockCount:87879
+read from boot_a, 0x6000000 bytes at Offset 0x0, partition size 0x6000000
+Load Image boot_a total time: 114 ms 
+BootStats: ID-5: Kernel Load Done:91623
+avb_slot_verify.c:260: DEBUG: boot_a: success: Image verification completed
+avb_slot_verify.c:184: DEBUG: dtbo_a: Loading entire partition.
+read from dtbo_a, 0x1800000 bytes at Offset 0x0, partition size 0x1800000
+Load Image dtbo_a total time: 27 ms 
+avb_slot_verify.c:260: DEBUG: dtbo_a: success: Image verification completed
+vbmeta_a uuid: f9ee474a-4ffa-0f3d-0b8c-257e7fc735b7
+State: Unlocked, AvbSlotVerify returned OK, continue boot
+Requested Partition: boot
+Loaded Partition: boot
+Requested Partition: dtbo
+Loaded Partition: boot
+Loaded Partition: dtbo
+Total loaded partition 2
+Boot Image Header Info...
+Image Header version     : 0x2
+Kernel Size 1            : 0x2DBE010
+Kernel Size 2            : 0x0
+Ramdisk Size             : 0x13BECB
+DTB Size                 : 0x1870E9
+keymaster app id 1
+KeyMasterStartApp success AppId: 0x1, Major: 4
+DateSupport: 1
+keymaster app id 1
+KeyMasterStartApp success AppId: 0x1, Major: 4
+KeyMasterSetRotAndBootState success
+keymaster app id 1
+KeyMasterStartApp success AppId: 0x1, Major: 4
+VB2: Authenticate complete! boot state is: orange
+VB2: boot state: orange(1)
+No Ffbm cookie found, ignore: Not Found
+Boot State is : 1
+Display menu is not enabled!
+Device is unlocked, Skipping boot verification
+Sending Milestone Call
+No Ffbm cookie found, ignore: Not Found
+Memory Base Address: 0x80000000
+Kernel Load Address: 0xA0080000
+Kernel Size Actual: 0x2DBF000
+Second Size Actual: 0x0
+Ramdisk Load Address: 0xAFEC3000
+Ramdisk Size Actual: 0x13C000
+Ramdisk Offset: 0x2DC0000
+Device Tree Load Address: 0xAFCC2000
+Boardsocid = 164, Dtsocid = 164
+BoardSocRev = 20001, DtSocRev =20001
+BoardFoundry = 10000, DtFoundry = 0
+BoardVariant = 8, DtVariant = 0
+BoardSubtype = 1, DtSubType = 0
+qcom,pmic-id does not exit
+Bestmatch = CC00
+Boardsocid = 164, Dtsocid = 164
+BoardSocRev = 20001, DtSocRev =20000
+BoardFoundry = 10000, DtFoundry = 0
+BoardVariant = 8, DtVariant = 0
+BoardSubtype = 1, DtSubType = 0
+qcom,pmic-id does not exit
+Bestmatch = CC00
+Boardsocid = 164, Dtsocid = 164
+BoardSocRev = 20001, DtSocRev =10000
+BoardFoundry = 10000, DtFoundry = 0
+BoardVariant = 8, DtVariant = 0
+BoardSubtype = 1, DtSubType = 0
+qcom,pmic-id does not exit
+Bestmatch = CC00
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+qcom,board-id does not exist (or) (-1) is not a multiple of (8)
+qcom,pmic-id does not exit
+rtic-id (1)
+MpData : (0) 
+MpData : (0) 
+MpData : (E0) 
+MpData : (9) 
+MpData : (80) 
+MpData : (FF) 
+MpData : (FF) 
+MpData : (FF) 
+MpData : (0) 
+MpData : (0) 
+MpData : (D8) 
+MpData : (1) 
+MpData : (0) 
+MpData : (0) 
+MpData : (0) 
+MpData : (0) 
+MpData : (88) 
+MpData : (5) 
+MpData : (0) 
+MpData : (0) 
+MpData : (EA) 
+MpData : (67) 
+MpData : (59) 
+MpData : (99) 
+MpData : (DE) 
+MpData : (7A) 
+MpData : (D7) 
+MpData : (B8) 
+MpData : (7) 
+MpData : (5B) 
+MpData : (F8) 
+MpData : (5B) 
+MpData : (60) 
+MpData : (7C) 
+MpData : (B7) 
+MpData : (BF) 
+MpData : (2C) 
+MpData : (7E) 
+MpData : (C9) 
+MpData : (E7) 
+MpData : (89) 
+MpData : (7) 
+MpData : (B6) 
+MpData : (39) 
+MpData : (4B) 
+MpData : (83) 
+MpData : (D8) 
+MpData : (22) 
+MpData : (CA) 
+MpData : (DD) 
+MpData : (DE) 
+MpData : (3) 
+Length of MpData (52)
+MpData (9A32FB98) 
+Kernel base address (A0080000)
+Kernel mode check 32/64: KernelLoadAddr->magic_64 (644D5241) KERNEL64_HDR_MAGIC = 644D5241
+Bestmatch = CC00
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 10001
+qcom,board-id does not match
+Board dt prop search failed.
+Dtbo count = 0 LocalBoardDtMatch = 0x1
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 10101
+qcom,board-id does not match
+Board dt prop search failed.
+Dtbo count = 1 LocalBoardDtMatch = 0x1
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 1010008
+BoardSubtype = 1, DtSubType = 1
+qcom,pmic-id does not exit
+Dtbo count = 2 LocalBoardDtMatch = 0x72000000001400
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 1050008
+qcom,board-id major version does not match
+BoardSubtype = 1, DtSubType = 1
+qcom,pmic-id does not exit
+Dtbo count = 3 LocalBoardDtMatch = 0x72000000000400
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 10008
+BoardSubtype = 1, DtSubType = 0
+qcom,pmic-id does not exit
+Dtbo count = 4 LocalBoardDtMatch = 0x68000000001400
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 3010008
+BoardSubtype = 1, DtSubType = 3
+subtype-id doesnot match
+Board dt prop search failed.
+Dtbo count = 5 LocalBoardDtMatch = 0x1
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 1001F
+qcom,board-id does not match
+Board dt prop search failed.
+Dtbo count = 6 LocalBoardDtMatch = 0x1
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 1020008
+qcom,board-id major version does not match
+BoardSubtype = 1, DtSubType = 1
+qcom,pmic-id does not exit
+Dtbo count = 7 LocalBoardDtMatch = 0x72000000000400
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = B
+qcom,board-id does not match
+Board dt prop search failed.
+Dtbo count = 8 LocalBoardDtMatch = 0x1
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 1000F
+qcom,board-id does not match
+Board dt prop search failed.
+Dtbo count = 9 LocalBoardDtMatch = 0x1
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 2010008
+BoardSubtype = 1, DtSubType = 2
+subtype-id doesnot match
+Board dt prop search failed.
+Dtbo count = 10 LocalBoardDtMatch = 0x1
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 1030008
+qcom,board-id major version does not match
+BoardSubtype = 1, DtSubType = 1
+qcom,pmic-id does not exit
+Dtbo count = 11 LocalBoardDtMatch = 0x72000000000400
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 1020001
+qcom,board-id does not match
+Board dt prop search failed.
+Dtbo count = 12 LocalBoardDtMatch = 0x1
+qcom, msm-id does not exist (or) is (-1) not a multiple of (8)
+BoardVariant = 8, DtVariant = 1040008
+qcom,board-id major version does not match
+BoardSubtype = 1, DtSubType = 1
+qcom,pmic-id does not exit
+Dtbo count = 13 LocalBoardDtMatch = 0x72000000000400
+DTs list: NULL
+Override DTB: GetBlkIOHandles failed loading user_dtbo!
+Apply Overlay total time: 367 ms 
+UpdateCmdLine VBCmdLine present len 440
+VB: Non-secure device: Security State: (0xF7F)
+VB: RWDeviceState: Succeed using devinfo!
+PROJECT_ID = 2, ProjectName = GLV9
+PHASE_ID = 6, PhaseName = PVT
+GetActiveSlot: found active slot _a, priority 3
+Succeed to append ProjectName into cmdline
+Succeed to append PhaseName into cmdline
+Cmdline: console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=
+RAM Partitions
+Add Base: 0x0000000080000000 Available Length: 0x000000003B800000 
+Add Base: 0x0000000180000000 Available Length: 0x0000000100000000 
+Add Base: 0x00000000C0000000 Available Length: 0x00000000C0000000 
+DDR Header Revision =0x30000
+DDR deviceType:8
+ddr_device_type is added to memory node
+ddr_device_rank, HBB not supported in Revision=0x30000
+Version=1
+Addr=0x9C000000
+Size=0x02300000
+ERROR: Could not get splash memory region node
+kaslr-Seed is added to chosen node
+Start DT fstab node update: 3375 ms
+Node: fstab found.
+Property:status found for sub-node:vendor	Property:ok
+Disabling node status :vendor
+End DT fstab node update: 3376 ms
+Failed to get CPU defective[1] part. Not Found
+Update lpd property
+Update Device Tree total time: 52 ms 
+FreeVerifiedBootResource
+Shutting Down UEFI Boot Services: 3393 ms

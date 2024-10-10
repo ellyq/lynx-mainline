@@ -42,3 +42,6 @@ Sensors:
 - Bosch BMM150 Magnetometer
 - ICM4X6XX Gyroscope
 - STK3X3X Proximity
+
+Storage:
+- WDC SDINFDK4-128G (WD iNAND MC EU521, 128GB UFS 3.1)
